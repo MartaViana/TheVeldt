@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Veldt</title>
+    <meta name="viewport" content="width=device-width,
+initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ecra">
+    <div id="x" style="z-index: 40000; cursor: pointer">
+        <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190.62 189">
+            <defs>
+                <style>.cls-1 {
+                    fill: #ffffff;
+                    fill-rule: evenodd;
+                }</style>
+            </defs>
+            <title>x</title>
+            <path class="cls-1"
+                  d="M28.23,5.86,120,97.61a2.45,2.45,0,0,1,0,3.72l-91.76,92a3,3,0,0,1-3.72,0L4.22,173.06,76,101.33a3,3,0,0,0,0-3.72L4.22,26.15,24.51,5.86a2.44,2.44,0,0,1,3.72,0Z"
+                  transform="translate(-4.22 -5)"/>
+            <path class="cls-1"
+                  d="M170.83,5.86,79.08,97.61a2.45,2.45,0,0,0,0,3.72l91.75,92a3,3,0,0,0,3.72,0l20.29-20.3L123.1,101.33a3,3,0,0,1,0-3.72l71.74-71.46L174.55,5.86a2.44,2.44,0,0,0-3.72,0Z"
+                  transform="translate(-4.22 -5)"/>
+        </svg>
+    </div>
+
+    <div style=" height: 700px; margin: auto; width: inherit;">
+
+        <img src="images/veldtfinal.png" width="1366px" height="700px" usemap="#image-map"
+             style="z-index:10000; position: absolute; opacity: 0 ">
+
+        <video id="video" width="1366" height="700px" style="z-index: 1; position: absolute">
+            <source src="images/final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <iframe src="images/fundo.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe>
+
+        <div class="objetos" style=" width: 1366px; height: 700px; z-index: 1000">
+
+            <map name="image-map">
+                <area class="hover" target="" alt="carteira" title="carteira" href="" coords="1038,657,1047,648,1039,644,1056,634,1087,651,1073,660,1063,664" shape="poly">
+                <area class="hover" target="" alt="lenço" title="lenço" href="" coords="1131,428,1119,406,1134,362,1145,360,1143,431" shape="poly">
+            </map>
+        </div>
+        <div style="z-index: 10000" class="hoverlen">
+            <h1 id="ctextlen">This scarf should't be here, something is wrong.</h1>
+        </div>
+
+        <div style="z-index: 10000" class="hovercart">
+            <h1 id="ctextcart">There is blood in this wallet. You should get out of here.</h1>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+
+    var fl = document.getElementsByClassName("hover")[1];
+    var textt = document.getElementById('ctextlen');
+    var ho = document.getElementsByClassName("hoverlen")[0];
+
+
+    fl.addEventListener("mouseenter", function () {
+        textt.style.visibility = "visible";
+        ho.style.visibility = "visible";
+        console.log("aa");
+    });
+
+    fl.addEventListener("mouseout", function () {
+        textt.style.visibility = "hidden";
+        ho.style.visibility = "hidden";
+
+    });
+
+    var fl1 = document.getElementsByClassName("hover")[0];
+    var textt1 = document.getElementById('ctextcart');
+    var ho1 = document.getElementsByClassName("hovercart")[0];
+
+
+    fl1.addEventListener("mouseenter", function () {
+        textt1.style.visibility = "visible";
+        ho1.style.visibility = "visible";
+    });
+
+    fl1.addEventListener("mouseout", function () {
+        textt1.style.visibility = "hidden";
+        ho1.style.visibility = "hidden";
+        console.log("aa");
+
+
+    });
+
+
+    var x = document.getElementById("x");
+    var v = document.getElementById("video");
+    var i = 0;
+    console.log(i);
+
+    x.addEventListener("click", function () {
+        if (i < 1) {
+            v.play();
+            i++;
+        }
+    });
+
+    function play() {
+        setTimeout(
+            function () {
+                if (i < 1) {
+                    v.play();
+                    i++;
+                }
+                console.log("qq");
+
+            }, 30000);
+    }
+
+    play();
+
+</script>
+</html>
+

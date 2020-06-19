@@ -1,0 +1,880 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+
+}
+
+.images {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backgrounds-size: 100% auto;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+#veldt {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+#title {
+    font-weight: bolder;
+    font-size: 80px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+#start a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+}
+
+#start:hover {
+    text-decoration: underline;
+}
+
+/*////////////////////////////////////intruçoes//////////////////////////////////// */
+
+#how {
+    font-weight: bolder;
+    font-size: 80px;
+    color: white;
+    margin-left: 10%;
+
+}
+
+#inst {
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#start2 a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-right: 10%;
+    font-size: 50px;
+
+}
+
+#start2:hover {
+    text-decoration: underline;
+}
+
+/*///////////////////////////////////entrada//////////////////////////////////// */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.scene {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2 {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/entrada.png) no-repeat center;
+}
+
+.magic {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 100px;
+    height: 150px;
+    background: url(.././images/entrada.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+.calendario {
+    position: absolute;
+    z-index: 7;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ecra {
+    width: 1366px;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.ecra_1 {
+    width: 1366px;
+    height: 700px;
+    margin: 0 auto;
+    background-image:url(.././images/index.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% auto;
+
+}
+.ecra_2 {
+    width: 1366px;
+    height: 700px;
+    margin: 0 auto;
+    background-image:url(.././images/inst.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% auto;
+
+}
+
+.objetos {
+    position: absolute;
+    z-index: 8;
+    opacity: 0;
+
+}
+
+#ctext {
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    font-size: 25px;
+
+}
+
+#ctext1 {
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+.hover1 {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 48%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+    width: 40%;
+    top: 430px;
+    height: 120px; /* Full height */
+}
+
+.hover11 {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 35%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+    width: 40%;
+    top: 480px;
+    height: 120px; /* Full height */
+}
+
+
+/*/////////////////////////////////SALA///////////////////////////////////*/
+.scene_sala {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_sala {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/sala.png) no-repeat center;
+}
+
+.magic_sala {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 140px;
+    height: 210px;
+    background: url(.././images/sala.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*/////////////////////////////////COZINHA///////////////////////////////////*/
+.scene_c {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_c {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/cozinha.png) no-repeat center;
+}
+
+.magic_c {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 200px;
+    height: 300px;
+    background: url(.././images/cozinha.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+.hover3 {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+    width: 40%;
+    top: 420px;
+    height: 130px; /* Full height */
+}
+/*/////////////////////////////////setas///////////////////////////////////*/
+
+#dir {
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    z-index: 1001;
+    right: 5%;
+    top: 359px;
+}
+
+#esq {
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    z-index: 1001;
+    left: 5%;
+    top: 359px;
+}
+
+#x {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 1001;
+    right: 10%;
+    top: 40px;
+}
+
+/*/////////////////////////////////pista///////////////////////////////////*/
+
+#pista {
+    width: 110px;
+    height: 150px;
+    position: absolute;
+    z-index: 1001;
+    left: 5%;
+    bottom: 0px;
+    font-size: 25px;
+}
+.p{
+    font-size: 25px;
+
+}
+
+
+.modal {
+    z-index: 40;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 300px; /* Location of the box */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    font-size: 25px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+/* Modal Content */
+.modal-content {
+    z-index: 40;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+    width: 40%;
+    height: 120px; /* Full height */
+}
+
+/* The Close Button */
+.close {
+    z-index: 40;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*/////////////////////////////////codigo///////////////////////////////////*/
+
+
+.scene_codigo {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_codigo {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/codigo.png) no-repeat center;
+}
+
+.magic_codigo {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 240px;
+    height: 360px;
+    background: url(.././images/codigo.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+#codigotext {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    top: 200px;
+    left: 30px;
+    z-index: 100;
+}
+
+.luz {
+    z-index: 6;
+}
+
+/*/////////////////////////////////nota///////////////////////////////////*/
+
+
+.scene_nota {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_nota {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/nota.png) no-repeat center;
+}
+
+.magic_nota {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 200px;
+    height: 300px;
+    background: url(.././images/nota.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+
+/*/////////////////////////////////chaves///////////////////////////////////*/
+
+.scene_chaves {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_chaves {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/chaves.png) no-repeat center;
+}
+
+.magic_chaves {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 200px;
+    height: 300px;
+    background: url(.././images/chaves.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+
+/*/////////////////////////////////quarto///////////////////////////////////*/
+.scene_q {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene_q2 {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/quarto.png) no-repeat center;
+}
+
+.magic_q {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 160px;
+    height: 240px;
+    background: url(.././images/quarto.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+.hover2 {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 15%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+    width: 40%;
+    top: 200px;
+    height: 120px; /* Full height */
+}
+
+/*/////////////////////////////////porta///////////////////////////////////*/
+
+
+.scene_porta {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_porta {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/porta.png) no-repeat center;
+}
+
+.magic_porta {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 240px;
+    height: 360px;
+    background: url(.././images/porta.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////calendario//////////////////////////////////// */
+
+.scene_calen {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_calen {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/calendario.png) no-repeat center;
+}
+
+.magic_calen {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 100px;
+    height: 150px;
+    background: url(.././images/calendario.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////livro//////////////////////////////////// */
+
+.scene_livro {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_livro {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/intruction_book.png) no-repeat center;
+}
+
+.magic_livro {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 100px;
+    height: 150px;
+    background: url(.././images/intruction_book.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////carteira//////////////////////////////////// */
+
+.scene_cart {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_cart {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/carteira.png) no-repeat center;
+}
+
+.magic_cart {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 100px;
+    height: 150px;
+    background: url(.././images/carteira.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////pc//////////////////////////////////// */
+
+.scene_pc {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_pc {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/computador.png) no-repeat center;
+}
+
+.magic_pc {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 100px;
+    height: 150px;
+    background: url(.././images/computador.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////pc//////////////////////////////////// */
+
+.scene_pc {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_pc {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/computador.png) no-repeat center;
+}
+
+.magic_pc {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 140px;
+    height: 210px;
+    background: url(.././images/computador.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+/*///////////////////////////////////quador//////////////////////////////////// */
+
+.scene_quadro {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_quadro {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/moldura.png) no-repeat center;
+}
+
+.magic_quadro {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 140px;
+    height: 210px;
+    background: url(.././images/moldura.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+
+/*///////////////////////////////////diario//////////////////////////////////// */
+
+.scene_diario {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_diario {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/diario.png) no-repeat center;
+}
+
+.magic_diario {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 160px;
+    height: 240px;
+    background: url(.././images/diario.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+/*///////////////////////////////////caixa//////////////////////////////////// */
+
+.scene_caixa {
+    z-index: 6;
+    position: absolute;
+    background: black;
+    padding: 20rem;
+    opacity: 0.7;
+    height: inherit;
+    width: inherit;
+}
+
+.scene2_caixa {
+    height: 700px;
+    margin: auto;
+    width: inherit;
+    background-size: cover;
+    background: url(.././images/caixa.png) no-repeat center;
+}
+
+.magic_caixa {
+    z-index: 5;
+    position: absolute;
+    background-size: auto 768px;
+    /*top: calc(50% - 10rem);
+    left: calc(50% - 10rem);*/
+    width: 160px;
+    height: 240px;
+    background: url(.././images/caixa.png) no-repeat fixed;
+    border-radius: 50%;
+    background-position: 36px -35px;
+}
+
+
+/*///////////////////////////////////hover nursery//////////////////////////////////// */
+
+#ctextlen{
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    font-size: 25px;
+}
+
+#ctextcart{
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+.hoverlen {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 45%;
+    margin: 0 auto;
+    padding: 30px;
+    width: 35%;
+    top: 400px;
+    height: 120px; /* Full height */
+}
+
+.hovercart {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    background-color: #fefefe;
+    left: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    width: 35%;
+    top: 450px;
+    height: 120px; /* Full height */
+}
